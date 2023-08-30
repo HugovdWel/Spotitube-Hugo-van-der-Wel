@@ -14,6 +14,9 @@ public class PlaylistResource {
     private PlaylistService playlistService;
     private AuthenticationService authenticationService;
 
+    public PlaylistResource() {
+    }
+
     @Inject
     public PlaylistResource(PlaylistService playlistService, AuthenticationService authenticationService) {
         this.playlistService = playlistService;

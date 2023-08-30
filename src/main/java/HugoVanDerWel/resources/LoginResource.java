@@ -16,8 +16,11 @@ public class LoginResource {
 
     private AuthenticationService authenticationService;
 
+    public LoginResource() {
+    }
+
     @Inject
-    public LoginResource(AuthenticationService authenticationService) {
+    public LoginResource(final AuthenticationService authenticationService) {
         this.authenticationService = authenticationService;
     }
 
